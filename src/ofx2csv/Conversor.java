@@ -11,7 +11,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Locale;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -26,9 +25,8 @@ import org.xml.sax.SAXException;
  * @author igora
  */
 public class Conversor {
-    public static void conversor(String file) 
-            throws FileNotFoundException, IOException, 
-                ParserConfigurationException, SAXException{
+    public static void conversor(String file) throws FileNotFoundException, IOException, 
+                                                     ParserConfigurationException, SAXException{
         
         String nomeArquivo = file;
         String baseArquivo = nomeArquivo.substring(0, nomeArquivo.length() -4);
